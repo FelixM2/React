@@ -1,33 +1,10 @@
-import logo from './logo.svg';
+/*import logo from './logo.svg';*/
 import './App.css';
+import CountFunction from './components/CountFunction/CountFunction';
 import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
-const JSX = (props)=>{
-  const src = `https://randomuser.me/api/portraits/lego/${props.id}.jpg`
-  console.log(props)
-  return (<picture>
-      <img src={src} alt='lego1'/>
-     {props.name}
-  </picture>)
-  }
-
-/* Agregando pprototipos a js
-Number.prototype.multiplicar = function (x){
-      return this*x
-}
-
-const myNum = 5 
-const myNum2 =10
-const result = myNum.multiplicar (5)
-const result2 = myNum2.multiplicar (20)
-
-console.log(result)
-console.log(result2)
-*/
-
-
-
-
+/*import CountClass from './components/CountClass/CountClass';*/
 
 function App() {
   return (
@@ -36,16 +13,12 @@ function App() {
     <div className="App">
     
       <NavBar/>
-      
+      <CountFunction/>
+      <ItemListContainer greeting='holanda'/>
+ 
     </div>
   );
 }
-const mystring = 'hola'
-
-console.log(mystring.toUpperCase)
-
-
-
 
 
 export default App;

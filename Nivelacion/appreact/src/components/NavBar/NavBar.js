@@ -1,4 +1,6 @@
 import './NavBar.css'
+import CartWidget from '../CartWidget/CartWidget'
+
 
 const NavBar =  ()=>{
 
@@ -8,8 +10,9 @@ const NavBar =  ()=>{
         <div className='navbar'>
            <div className='title'>
             
-             <img className='img' src='https://i.pinimg.com/236x/bc/47/18/bc47182aa08ac60cf4270d87961d3018.jpg'></img> 
+             <img className='img' src='https://i.pinimg.com/236x/bc/47/18/bc47182aa08ac60cf4270d87961d3018.jpg' alt="img"></img> 
                 <h1 className='h1' >FreeMarket</h1>
+               
            </div>
 
             <div className='buttons'>
@@ -17,10 +20,11 @@ const NavBar =  ()=>{
             <button className='button' >Tablets</button>
             <button className='button' >Tv</button>
             <button className='button' >Heladeras</button>
-            </div>
             
+            </div>
+            <CartWidget/>
         </div>
-   
+  
   
   
     )
